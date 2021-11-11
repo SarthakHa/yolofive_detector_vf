@@ -4,12 +4,12 @@ import torch
 
 from torch._C import device
 
-from videoflow.core.node import ProcessorNode
+from videoflow.processors.vision.detectors import ObjectDetector
 from videoflow.core.constants import CPU, GPU #You can set CPU instead of GPU at the end of init function to utilise CPU instead. Recommended to use GPU.
 from videoflow.processors.vision.detectors import ProcessorNode
 from videoflow.utils.downloader import get_file
 
-class YOLOv5Detector(ProcessorNode):
+class YOLOv5Detector(ObjectDetector):
 
     def __init__(self, classes_to_detect = None, min_score_threshold = 0.5, model_type = 'YOLOv5s', nms_iou_threshold=0.5, custom_inference_size=None):
         
@@ -90,7 +90,7 @@ class YOLOv5Detector(ProcessorNode):
         ymin = res['ymin'].to_numpy()
         xmax = res['xmax'].to_numpy()
         ymax = res['ymax'].to_numpy()
-        classes = res['class'].to_numpy()
+        classes = res['name'].to_numpy()
         scores = res['confidence'].to_numpy()
 
         indices = np.where(scores > self._min_score_threshold)[0] #Method two to set minimum score threshold

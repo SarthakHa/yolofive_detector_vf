@@ -14,4 +14,4 @@ The VF library uses multiprocessing, increasing efficiency and restricting frame
 Create a pipeline using the videoflow library and then use my YOLOv5 module as a part of that pipeline.
 
 ## Way 2: Run Google Colab example
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kQkmGxvOz4QbjsPtZeJLDS9A_z6lb6KL]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kQkmGxvOz4QbjsPtZeJLDS9A_z6lb6KL)

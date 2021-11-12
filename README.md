@@ -6,8 +6,18 @@ Videoflow repo: https://github.com/videoflow/videoflow
 
 Videoflow contrib repo: https://github.com/videoflow/videoflow-contrib
 
-# Why Videoflow?
-The VF library uses multiprocessing, increasing efficiency and restricting frame rate of input video to the limiting factor module rather than the runtime of all the modules put together. Another way to bottleneck is by using a GPU with too little memory, especially when running high intensity modules like video action recogntion modules.
+# Quick Start
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kQkmGxvOz4QbjsPtZeJLDS9A_z6lb6KL)
+
+__Run this colab and then download the 'output.avi' file in under the videos folder in the colab environment.__
+
+# Why create a module for Videoflow?
+The VF library uses multiprocessing, increasing efficiency and restricting frame rate of input video to the limiting factor module rather than the runtime of all the modules put together. This allows for better use of computer resources. 
+
+Furthmore, the VF library uses a modularised design where modules can be used in a plug n play style manner. For example, different Object Detector modules can be switched out for each other without much hassle, allowing prototyping to take place quickly.
+
+Although modularity is central to the VF library, there isn't a module for every single different possible attachment to the pipeline, hence I decided to create my own module for an advanced object detection model. A different module exists for the older yolov3, however, none for the YOLOv4 or YOLOv5. Considering that YOLOv5 is more standard nowadays, I decided to implement one for YOLOv5.
 
 # Ways to use this project
 

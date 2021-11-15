@@ -58,4 +58,15 @@ Click the respective Google Colab button below to go to the Colab.
 ### Modifying the Google Colab
 You can modify the google colab code to perform different functions, i.e. add more modules and change the fundamental functionality with YOLOv5 just being one in a series of modules.
 
-The easiest modification is to replace the youtube video being analysed. Simply change the youtube video url passed in code block 8, line 6. Be sure to run the output of code snippet `yt.streams.filter(file_extension='mp4')` first and select an appropriate ID tag (tag of any stream with mp4 format should work) and then change the tag ID value in `stream = yt.streams.get_by_itag(22)` where 22 is the ID tag
+The easiest modification is to replace the youtube video being analysed.
+
+Locate the code block in colab that deals with the YouTube video (it should contain `from pytube import YouTube` at the top of the block).
+
+Next, change the link variable to the URL of whichever YouTube video you want to run the program on.
+
+This should do it in most cases. In extremely rare cases, however, you will need to run the next code block `yt.streams.filter(file_extension='mp4')`, read its output, choose any ID tag number which is written as `itag` (primary difference is in video quality) and then change the ID tag number in the next block accordingly. The next block would look something like this:
+
+```
+stream = yt.streams.get_by_itag(YOUR CHOSEN TAG NUMBER HERE)
+stream.download(filename="savedVid.mp4")
+```

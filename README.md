@@ -22,6 +22,10 @@ __Run this colab and then download the 'output.avi' file under the videos folder
 
 ### YOLOv5 --> Bounding Box Tracker --> Obfuscator --> BRG to RGB Color Fix
 
+| Plain Video | After going through VF with our YOLOv5 Module and then an Obfuscator |
+|------------------------------------------------------------------------|-------------------------------------------------------------------------|
+|![Plain Video](https://i.postimg.cc/h4y9D5y0/plain-Video2.gif) | ![YOLOv5 VF Module Output](https://i.postimg.cc/BndpqVvz/Obfuscator-Output.gif) |
+
 # Why create a module for Videoflow?
 The VF library uses multiprocessing, increasing efficiency and restricting frame rate of input video to the limiting factor module rather than the runtime of all the modules put together. This allows for better use of computer resources. 
 

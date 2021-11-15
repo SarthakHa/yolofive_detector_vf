@@ -12,6 +12,12 @@ Videoflow contrib repo: https://github.com/videoflow/videoflow-contrib
 
 __Run this colab and then download the 'output.avi' file in under the videos folder in the colab environment.__
 
+# Demo
+
+### YOLOv5 --> Bounding Box Annotator --> BRG to RGB Color Fix
+
+![YOLOv5 VF Module Output](https://www.dropbox.com/s/kkvztrlmo92mbio/yolofivemoduleoutput.gif)
+
 # Why create a module for Videoflow?
 The VF library uses multiprocessing, increasing efficiency and restricting frame rate of input video to the limiting factor module rather than the runtime of all the modules put together. This allows for better use of computer resources. 
 

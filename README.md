@@ -10,7 +10,12 @@ Videoflow contrib repo: https://github.com/videoflow/videoflow-contrib
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1kQkmGxvOz4QbjsPtZeJLDS9A_z6lb6KL)
 
-__Run this colab and then download the 'output.avi' file under the videos folder in the colab environment.__
+__Run this colab and then download the 'output.avi' file that can be found in `Files > Content > Videos` in the colab environment.__
+
+If you have not used Colab before, run by going to the Runtime tab in the top toolbar and clicking Run all, `Runtime > Run all`
+
+Note: Ensure that the runtime is of GPU type. This setting can be found under the Runtime tab in the top toolbar, `Runtime > Change runtime type > Hardware accelerator > GPU`
+
 
 # Demo
 
